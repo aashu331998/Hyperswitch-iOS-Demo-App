@@ -9,7 +9,7 @@ import SwiftUI
 import hyperswitch
 
 class HyperBackendModel: ObservableObject {
-    let backendCheckoutUrl = URL(string: "https://u4kkpaenwc.execute-api.ap-south-1.amazonaws.com/default/create-payment-intent")! // Your backend endpoint
+    let backendCheckoutUrl = URL(string: "http://10.0.2.2:4444")! // Your backend endpoint
     @Published var paymentSheet: HyperPaymentSheet?
     @Published var paymentResult: HyperPaymentSheetResult?
     
